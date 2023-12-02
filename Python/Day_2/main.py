@@ -1,5 +1,6 @@
 import os
 from typing import List
+import timeit
 
 input_file = "input.txt"
 file_path = os.path.join(os.path.dirname(__file__), input_file)
@@ -79,4 +80,6 @@ def part2() -> int:
     
                 
 print("Part1: ", part1())
+print("Timeit part 1: ", timeit.timeit("part1()", number=10000, globals=globals()) / 10, "ms")
 print("Part 2: ", part2())
+print("Timeit part 2: ", timeit.timeit("part2()", number=10000, globals=globals()) / 10, "ms")
