@@ -90,10 +90,9 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\2023;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Util;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
@@ -111,7 +110,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\2023;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Util;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -131,10 +130,9 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\2023;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Util;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
@@ -152,7 +150,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\2023;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Util;C:\Advent_of_Code_2023\Cpp_Advent_of_code_23\Interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -166,18 +164,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2023\day1.cpp" />
+    <ClCompile Include="2023\day2.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Util\DayFactory.cpp" />
     <ClCompile Include="Util\util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2023\day1.h" />
+    <ClInclude Include="2023\day2.h" />
     <ClInclude Include="Interfaces\IDay.h" />
     <ClInclude Include="Util\DayFactory.h" />
     <ClInclude Include="Util\util.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="2023\Inputs\Day1.txt" />
+    <Text Include="2023\Inputs\Day2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,4 +21,5 @@ std::vector<std::string> get_input(std::string input_path) {
 
 void register_days(DayFactory& day_factory) {
 	day_factory.register_solution(2023, 1, []() { return new Day1_2023(); });
+	day_factory.register_solution(2023, 2, []() { return new Day2_2023(); });
 }

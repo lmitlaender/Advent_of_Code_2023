@@ -5,6 +5,7 @@
 #include <fstream>
 #include "DayFactory.h"
 #include "../2023/day1.h"
+#include "../2023/day2.h"
 #include "IDay.h"
 
 std::vector<std::string> get_input(std::string input_path);
