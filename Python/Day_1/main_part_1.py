@@ -14,6 +14,7 @@ with  open(file_path, mode="r") as file:
     for line in lines:
         matches = re.findall(pattern=regex_pattern, string=line)
         calibration_value = matches[0] + matches[-1]
+        print(calibration_value)
         total += int(calibration_value)
         
 print(total)
