@@ -119,6 +119,7 @@ set(no_group_source_files
     "2023/Inputs/Day2.txt"
     "2023/Inputs/Day3.txt"
     "2023/Inputs/Day4.txt"
+    "2023/Inputs/Day5.txt"
 )
 source_group("" FILES ${no_group_source_files})
 
@@ -127,6 +128,7 @@ set(Header_Files
     "2023/day2.h"
     "2023/day3.h"
     "2023/day4.h"
+    "2023/day5.h"
     "Interfaces/IDay.h"
     "Util/DayFactory.h"
 )
@@ -137,6 +139,7 @@ set(Source_Files__2023
     "2023/day2.cpp"
     "2023/day3.cpp"
     "2023/day4.cpp"
+    "2023/day5.cpp"
     "main.cpp"
     "Util/DayFactory.cpp"
 )
