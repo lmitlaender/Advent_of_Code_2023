@@ -29,6 +29,8 @@ int main()
     std::cout << "Part 1 Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(start_part_2 - start_part_1) << "\n";
     std::cout << "Part 2 Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_part_2) << "\n";
 
+    system("pause");
+
     return 0;
 }
 

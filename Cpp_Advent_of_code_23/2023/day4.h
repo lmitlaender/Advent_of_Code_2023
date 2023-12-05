@@ -6,6 +6,7 @@
 #include <fstream>
 #include <set>
 #include <numeric>
+#include <cmath>
 
 class Day4_2023 : public IDay {
 public:
