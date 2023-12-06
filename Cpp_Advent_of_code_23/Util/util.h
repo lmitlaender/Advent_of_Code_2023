@@ -9,6 +9,7 @@
 #include "../2023/day3.h"
 #include "../2023/day4.h"
 #include "../2023/day5.h"
+#include "../2023/day6.h"
 #include "IDay.h"
 
 std::vector<std::string> get_input(std::string input_path);
