@@ -98,9 +98,7 @@ void Day6_2023::Part2()
 	const double x1 = std::sqrt(-distance + ((time * time) / 4)) + time / 2;
 	const double x2 = -1 * (std::sqrt(-distance + ((time * time) / 4)) - time / 2);
 
-	const long from{ static_cast<int>(x2 + 1) };
-	const long to{ static_cast<int>(x1 - 0.00000000000001) };
-	const long ways_to_win{ to - from + 1 };
+	const long ways_to_win{ static_cast<int>(x1 - x2) };
 
 	std::cout << "Value x1: " << x1 << "; Value x2: " << x2 << "; Time: " << time << "; Distance: " << distance << "; Ways to win: " << ways_to_win << "\n";
 

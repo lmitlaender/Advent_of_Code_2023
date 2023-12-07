@@ -28,3 +28,22 @@ void register_days(DayFactory& day_factory) {
 	day_factory.register_solution(2023, 6, []() { return new Day6_2023(); });
 	day_factory.register_solution(2023, 7, []() { return new Day7_2023(); });
 }
+
+void download_input(int year, int day) {
+	httplib::Client client("https://adventofcode.com");
+
+	auto res = client.Get(std::format("/{}/day/{}/input", year, day));
+
+
+	if (res && res->status == 200) {
+		// Save the downloaded content to a file
+		std::ofstream file(std::format("{}/Inputs/Day{}.txt", year, day), std::ios::binary);
+		file.write(res->body.c_str(), res->body.size());
+		file.close();
+
+		std::cout << "File downloaded successfully.\n";
+	}
+	else {
+		std::cerr << "Error downloading file. Status code: " << (res ? res->status : -1) << std::endl;
+	}
+}

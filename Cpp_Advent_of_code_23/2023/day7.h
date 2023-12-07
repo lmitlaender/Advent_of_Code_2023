@@ -17,4 +17,5 @@ public:
 
 private:
 	hand_type get_hand_type(const std::string& hand);
+	hand_type get_hand_type_wrapper(const std::string& hand);
 };

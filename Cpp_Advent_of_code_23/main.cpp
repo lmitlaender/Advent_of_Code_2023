@@ -15,6 +15,8 @@ int main()
     std::cin >> day;
     std::cout << "\n\n";
 
+    //download_input(std::stoi(year), std::stoi(day));
+
     auto day_factory = DayFactory();
     register_days(day_factory);
 

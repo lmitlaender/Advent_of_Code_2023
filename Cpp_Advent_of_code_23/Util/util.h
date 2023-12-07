@@ -13,6 +13,14 @@
 #include "../2023/day7.h"
 #include "IDay.h"
 
+#define CPPHTTPLIB_OPENSSL_SUPPORT
+#include <httplib.h>
+#ifdef _WIN32
+#include <Windows.h>
+#endif
+
 std::vector<std::string> get_input(std::string input_path);
 
 void register_days(DayFactory& day_factory);
+
+void download_input(int year, int day);
