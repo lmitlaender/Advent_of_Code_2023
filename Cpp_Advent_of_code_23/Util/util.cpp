@@ -27,6 +27,8 @@ void register_days(DayFactory& day_factory) {
 	day_factory.register_solution(2023, 5, []() { return new Day5_2023(); });
 	day_factory.register_solution(2023, 6, []() { return new Day6_2023(); });
 	day_factory.register_solution(2023, 7, []() { return new Day7_2023(); });
+	day_factory.register_solution(2023, 8, []() { return new Day8_2023(); });
+	day_factory.register_solution(2023, 9, []() { return new Day9_2023(); });
 }
 
 void download_input(int year, int day) {

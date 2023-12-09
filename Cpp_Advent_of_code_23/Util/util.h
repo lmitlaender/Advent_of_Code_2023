@@ -11,6 +11,8 @@
 #include "../2023/day5.h"
 #include "../2023/day6.h"
 #include "../2023/day7.h"
+#include "../2023/day8.h"
+#include "../2023/day9.h"
 #include "IDay.h"
 
 #define CPPHTTPLIB_OPENSSL_SUPPORT
