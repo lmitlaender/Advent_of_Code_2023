@@ -112,5 +112,6 @@
     <Text Include="2023\Inputs\Day7.txt" />
     <Text Include="2023\Inputs\Day8.txt" />
     <Text Include="2023\Inputs\Day9.txt" />
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
 </Project>
