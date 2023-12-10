@@ -16,7 +16,8 @@ set(2023_source
     2023/day6.cpp
     2023/day7.cpp
     2023/day8.cpp
-    2023/day9.cpp)
+    2023/day9.cpp
+        2023/day10.cpp)
 source_group("Source Files\\2023" FILES ${2023_source})
 
 set(Util_source
