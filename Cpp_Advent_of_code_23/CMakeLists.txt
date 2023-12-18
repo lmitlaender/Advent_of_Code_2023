@@ -4,6 +4,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(AoC VERSION 0.1.0 LANGUAGES C CXX)
 
+
+
 ################################################################################
 # Source, target, and executable
 ################################################################################
@@ -29,83 +31,8 @@ set(ALL_SOURCE
     ${2023_source}
     ${Util_source} "2023/day11.cpp" "2023/day12.cpp")
 
-add_executable(AoC main.cpp ${ALL_SOURCE} "2023/day13.cpp" "2023/day13.h" "2023/day14.cpp" "2023/day14.h" "2023/day16.cpp" "2023/day17.cpp")
+add_executable(AoC main.cpp ${ALL_SOURCE} "2023/day13.cpp" "2023/day13.h" "2023/day14.cpp" "2023/day14.h" "2023/day16.cpp" "2023/day17.cpp" "2023/day18.cpp")
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR})
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(AoC PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/libs ${CMAKE_CURRENT_SOURCE_DIR}/Interfaces ${CMAKE_CURRENT_SOURCE_DIR}/2023 ${CMAKE_CURRENT_SOURCE_DIR}/Util)
-
-################################################################################
-# Compile and link options
-################################################################################
-if(MSVC)
-    if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
-        target_compile_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /Oi;
-                /Gy
-            >
-            /permissive-;
-            /sdl;
-            /W4;
-            /WX-;
-            ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-            /Ot;
-            /w44365;
-            ${DEFAULT_CXX_EXCEPTION_HANDLING}
-        )
-    elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
-        target_compile_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /Oi;
-                /Gy
-            >
-            /permissive-;
-            /sdl;
-            /W4;
-            /WX-;
-            ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-            /Ot;
-            /w44365;
-            ${DEFAULT_CXX_EXCEPTION_HANDLING}
-        )
-    endif()
-    if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
-        target_link_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /OPT:REF;
-                /OPT:ICF
-            >
-            /DEBUG;
-            /SUBSYSTEM:CONSOLE
-        )
-    elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
-        target_link_options(${PROJECT_NAME} PRIVATE
-            $<$<CONFIG:Release>:
-                /OPT:REF;
-                /OPT:ICF
-            >
-            /DEBUG;
-            /SUBSYSTEM:CONSOLE
-        )
-    endif()
-elseif(CMAKE_COMPILER_IS_GNUCXX)
-    if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
-    target_compile_options(${PROJECT_NAME} PRIVATE
-        ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-        ${DEFAULT_CXX_EXCEPTION_HANDLING}
-    )
-    elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
-    target_compile_options(${PROJECT_NAME} PRIVATE
-        ${DEFAULT_CXX_DEBUG_INFORMATION_FORMAT};
-        ${DEFAULT_CXX_EXCEPTION_HANDLING}
-    )
-    endif()
-    if("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x64")
-    target_link_options(${PROJECT_NAME} PRIVATE
-    )
-    elseif("${CMAKE_VS_PLATFORM_NAME}" STREQUAL "x86")
-    target_link_options(${PROJECT_NAME} PRIVATE
-    )
-    endif()
-endif()

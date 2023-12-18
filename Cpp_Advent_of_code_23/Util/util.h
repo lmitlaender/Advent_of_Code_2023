@@ -20,6 +20,7 @@
 #include "../2023/day14.h"
 #include "../2023/day16.h"
 #include "../2023/day17.h"
+#include "../2023/day18.h"
 #include "IDay.h"
 
 

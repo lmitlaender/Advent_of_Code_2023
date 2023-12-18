@@ -36,4 +36,5 @@ void register_days(DayFactory& day_factory) {
 	day_factory.register_solution(2023, 14, []() { return new Day14_2023(); });
 	day_factory.register_solution(2023, 16, []() { return new Day16_2023(); });
 	day_factory.register_solution(2023, 17, []() { return new Day17_2023(); });
+	day_factory.register_solution(2023, 18, []() { return new Day18_2023(); });
 }
