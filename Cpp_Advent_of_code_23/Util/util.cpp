@@ -30,4 +30,10 @@ void register_days(DayFactory& day_factory) {
 	day_factory.register_solution(2023, 8, []() { return new Day8_2023(); });
 	day_factory.register_solution(2023, 9, []() { return new Day9_2023(); });
 	day_factory.register_solution(2023, 10, []() { return new Day10_2023(); });
+	day_factory.register_solution(2023, 11, []() { return new Day11_2023(); });
+	day_factory.register_solution(2023, 12, []() { return new Day12_2023(); });
+	day_factory.register_solution(2023, 13, []() { return new Day13_2023(); });
+	day_factory.register_solution(2023, 14, []() { return new Day14_2023(); });
+	day_factory.register_solution(2023, 16, []() { return new Day16_2023(); });
+	day_factory.register_solution(2023, 17, []() { return new Day17_2023(); });
 }

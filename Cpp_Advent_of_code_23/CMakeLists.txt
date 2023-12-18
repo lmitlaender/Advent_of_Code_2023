@@ -27,9 +27,9 @@ source_group("Source Files\\Util" FILES ${Util_source})
 
 set(ALL_SOURCE
     ${2023_source}
-    ${Util_source})
+    ${Util_source} "2023/day11.cpp" "2023/day12.cpp")
 
-add_executable(AoC main.cpp ${ALL_SOURCE})
+add_executable(AoC main.cpp ${ALL_SOURCE} "2023/day13.cpp" "2023/day13.h" "2023/day14.cpp" "2023/day14.h" "2023/day16.cpp" "2023/day17.cpp")
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR})
 set_target_properties(AoC PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR})
